@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FrontendByHeart - Репетитор по веб-разработке</title>
+  </head>
+  <body>
+    <!-- Шапка с навигацией и кнопками на проекты -->
+    <header class="header">
+      <div class="container nav">
+        <a href="#" class="logo">FrontendByHeart</a>
+        <nav class="menu">
+          <a href="#about">Обо мне</a>
+          <a href="#experience">Опыт</a>
+          <a href="#projects">Проекты</a>
+          <a href="#certificates">Сертификаты</a>
+          <a href="#prices">Цены</a>
+          <a href="#program">Программа</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <!-- <div class="nav-buttons">
+        <a href="https://your-player-link.com" target="_blank">🎵 Плеер</a>
+        <a href="https://your-tasks-link.com" target="_blank">📝 Задачи</a>
+        <a href="https://your-tester-link.com" target="_blank">🔧 Тестер</a>
+      </div> -->
+      </div>
+    </header>
+
+    <!-- Hero секция -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Обучаю веб-разработке с нуля до проектов</h1>
+        <p>
+          Индивидуальные занятия по HTML, CSS, JavaScript, Vue.js, React.js.
+          Реальные проекты, домашние задания, разбор ошибок.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacts" class="btn primary">Записаться бесплатно</a>
+          <a href="#projects" class="btn secondary">Смотреть проекты</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Обо мне</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center">
+          <p style="font-size: 1.2rem; opacity: 0.9">
+            Репетитор с опытом создания реальных проектов. Обучаю создавать
+            сайты, работать с API, делать UI-компоненты. Помогаю с Vue.js,
+            Webpack, async/await, модальными окнами.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Опыт -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Мой опыт</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <h3>3+ года разработки</h3>
+            <p>Создаю веб-приложения, работаю с React, JavaScript, API.</p>
+          </div>
+          <div class="card">
+            <h3>50+ учеников</h3>
+            <p>Помог освоить frontend с нуля, сделать первые проекты.</p>
+          </div>
+          <div class="card">
+            <h3>Реальные проекты</h3>
+            <p>Player, Tasks, Tester, Todo apps, API интеграция.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Мои проекты</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <h3>🎵 Музыкальный плеер</h3>
+            <p>Полнофункциональный плеер с плейлистами и UI-анимациями.</p>
+            <a href="" target="_blank" class="btn secondary">Открыть проект</a>
+          </div>
+
+          <div class="card">
+            <h3>🔧 API Тестер</h3>
+            <p>Приложение для тестирования запросов и отладки API.</p>
+            <a
+              href="https://1dayzy1.github.io/API-tester/"
+              target="_blank"
+              class="btn secondary"
+              >Открыть проект</a
+            >
+          </div>
+          <div class="card">
+            <h3>💱 Прогноз погоды</h3>
+            <p>Работа с публичным API, обработка ошибок, лоадеры.</p>
+            <a
+              href="https://1dayzy1.github.io/weather-app/"
+              target="_blank"
+              class="btn secondary"
+              >Открыть проект</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Сертификаты -->
+    <!-- Сертификаты с картинками -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <h2>Мои сертификаты</h2>
+
+        <div class="certificates-grid">
+          <div class="cert-card">
+            <div class="cert-info">
+              <span class="cert-company">EASY UM</span>
+              <h3>Full-Stack JavaScript Developer</h3>
+              <p>
+                HTML, CSS, JavaScript, Node.js, Express, React, Docker, MongoDB.
+              </p>
+              <button href="#" class="cert-link" data-value="fullstack">
+                Смотреть сертификат
+              </button>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-info">
+              <span class="cert-company">MIMO</span>
+              <h3>JavaScript Advanced</h3>
+              <p>ES6+, Async/Await, DOM, API, Modules.</p>
+              <button href="#" class="cert-link" data-value="javascript">
+                Смотреть сертификат
+              </button>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-info">
+              <span class="cert-company">MIMO</span>
+              <h3>Frontend Developer</h3>
+              <p>HTML5, CSS3, Responsive, Webpack, Vite.</p>
+              <button href="#" class="cert-link" data-value="frontend">
+                Смотреть сертификат
+              </button>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-info">
+              <span class="cert-company">MIMO</span>
+              <h3>React Developer</h3>
+              <p>JSX, Components, Hooks, Props, State, Router.</p>
+              <button href="#" class="cert-link" data-value="react">
+                Смотреть сертификат
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal">
+      <div class="shadow"></div>
+      <div class="content">
+        <img src="" alt="" height="600" class="img-certificate" />
+      </div>
+    </div>
+
+    <!-- Цены -->
+    <section id="prices" class="section">
+      <div class="container">
+        <h2>Цены и сроки</h2>
+        <div class="pricing-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Тариф</th>
+                <th>Цена</th>
+                <th>Длительность</th>
+                <th>Что входит</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Разовый урок</td>
+                <td class="price-highlight">1500 ₽</td>
+                <td>60 минут</td>
+                <td>1 тема + ДЗ</td>
+              </tr>
+              <tr>
+                <td>Пакет 5 уроков</td>
+                <td class="price-highlight">7000 ₽</td>
+                <td>4 недели</td>
+                <td>4 темы + разбор ДЗ + проект</td>
+              </tr>
+              <tr style="background: rgba(59, 130, 246, 0.1)">
+                <td><strong>Полный курс</strong></td>
+                <td class="price-highlight"><strong>12 000 ₽</strong></td>
+                <td>3 месяца</td>
+                <td>Полная программа + финальный проект + сертификат</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Программа -->
+    <section id="program" class="section">
+      <div class="container">
+        <h2>Что пройдём</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <h3>Неделя 1-2</h3>
+            <p>HTML/CSS, Flexbox, Grid, адаптивная верстка.</p>
+          </div>
+          <div class="card">
+            <h3>Неделя 3-5</h3>
+            <p>JavaScript: переменные, функции, DOM, события.</p>
+          </div>
+          <div class="card">
+            <h3>Неделя 6-8</h3>
+            <p>Async/await, fetch API, localStorage, модалки.</p>
+          </div>
+          <div class="card">
+            <h3>Неделя 9-12</h3>
+            <p>Vue.js, компоненты, роутинг, состояние.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section
+      id="contacts"
+      class="section"
+      style="background: rgba(11, 26, 51, 0.5)"
+    >
+      <div class="container">
+        <h2>Записаться на пробный урок</h2>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-form"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="d45e86d2-9a71-45c8-a765-ffd70dfd2d29"
+          />
+          <div class="form-group">
+            <input name="Имя" type="text" placeholder="Ваше имя" required />
+          </div>
+          <div class="form-group">
+            <input
+              name="Контакты"
+              type="tel"
+              placeholder="Телефон / Telegram"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="Описание"
+              rows="5"
+              placeholder="Что хотите изучить? Какой уровень?"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn primary" style="width: 100%">
+            Записаться бесплатно
+          </button>
+        </form>
+        <div style="text-align: center; margin-top: 2rem; opacity: 0.8">
+          <p>📱 Telegram: @Dmitriy_FrontEnd</p>
+          <p>📧 Email: tst@email.com</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
