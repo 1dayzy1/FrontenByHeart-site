@@ -1,4 +1,4 @@
-// Универсальная анимация для всех блоков
+
 const animateOnScroll = () => {
   const observerOptions = {
     threshold: 0.1,
@@ -16,7 +16,7 @@ const animateOnScroll = () => {
     });
   }, observerOptions);
 
-  // Наблюдаем за всеми анимируемыми блоками
+  
   document
     .querySelectorAll(".card, .section h2, .hero-content, .pricing-table")
     .forEach((el) => {
@@ -67,6 +67,10 @@ const openModal = (lang) =>{
         img.src = "./img/mimo_react.jpeg";
         break;
 
+      case "html":
+        modal.classList.add("active");
+        img.src = "./img/stepik.png";
+        break;
 
 
 
