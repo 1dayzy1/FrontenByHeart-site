@@ -52,6 +52,7 @@ body {
 
 .header {
   position: fixed;
+  
   top: 0;
   left: 0;
   right: 0;
@@ -67,11 +68,17 @@ body {
   align-items: center;
 }
 
+.logo-block{
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
   color: #60a5fa;
   text-decoration: none;
+  margin-left: 20px;
 }
 
 .menu {
