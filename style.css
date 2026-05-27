@@ -1,6 +1,4 @@
-/* ==========================================================================
-   RESET & BASE STYLES
-   ========================================================================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -19,9 +17,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ==========================================================================
-     LAYOUT
-     ========================================================================== */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -32,10 +28,7 @@ body {
   padding: 100px 0;
 }
 
-/* ==========================================================================
-     ANIMATIONS
-     ========================================================================== */
-/* Начальное состояние */
+
 .card,
 .section h2,
 .hero-content,
@@ -46,7 +39,7 @@ body {
   transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Анимированное состояние */
+
 .card.animate,
 .section h2.animate,
 .hero-content.animate,
@@ -117,9 +110,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* ==========================================================================
-     HERO SECTION
-     ========================================================================== */
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -147,9 +138,7 @@ body {
   opacity: 0.9;
 }
 
-/* ==========================================================================
-     BUTTONS
-     ========================================================================== */
+
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -220,6 +209,116 @@ body {
   color: #60a5fa;
   margin-bottom: 1rem;
   font-size: 1.5rem;
+}
+
+
+
+.overall-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.stars {
+  display: flex;
+}
+
+.star {
+  color: #e2e8f0;
+  font-size: 1.5rem;
+}
+
+.star.active {
+  color: #fbbf24; /* Золотой цвет */
+}
+
+.rating-value {
+  color: #60a5fa;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto; 
+  height: 400px; 
+}
+
+.slides {
+  position: relative;  
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  opacity: 0;
+  pointer-events: none;
+  transition: 300ms;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.review-photo {
+  max-width: 90%; 
+  max-height: 90%; 
+  width: auto; 
+  height: auto; 
+  object-fit: contain; 
+  border-radius: 20px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.slider-btn {
+  position: absolute;
+  background: rgba(7, 17, 31, 0.9);
+  color: #60a5fa;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.prev {
+  left: -70px; 
+}
+
+.next {
+  right: -70px; 
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .slider {
+    height: 300px; 
+  }
+  
+  .prev, .next {
+    left: -20px; 
+    
+  }
 }
 
 

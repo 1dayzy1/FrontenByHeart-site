@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded", animateOnScroll);
 const cert_link = document.querySelectorAll(".cert-link");
 const modal = document.querySelector(".modal");
 const shadow = document.querySelector(".shadow");
-const img = document.querySelector(".img-certificate")
+const img = document.querySelector(".img-certificate");
+
+const sliders = document.querySelector(".slides");
 
 
 cert_link.forEach(el =>{
@@ -77,3 +79,57 @@ const openModal = (lang) =>{
     console.log(error)
   }
 }
+
+
+const render_slider = () =>{
+  const arr_path = [
+    { path: "./img-avito/review1.png" },
+    { path: "./img-avito/review2.png" },
+    { path: "./img-avito/review3.png" },
+    { path: "./img-avito/review4.png" },
+    { path: "./img-avito/review5.png" },
+    { path: "./img-avito/review6.png" },
+    { path: "./img-avito/review7.png" },
+    { path: "./img-avito/review8.png" },
+    { path: "./img-avito/review9.png" },
+    { path: "./img-avito/review10.png" },
+    { path: "./img-avito/review11.png" },
+    { path: "./img-avito/review12.png" },
+    { path: "./img-avito/review13.png" },
+    { path: "./img-avito/review14.png" },
+    { path: "./img-avito/review15.png" },
+    { path: "./img-avito/review16.png" }
+  ]
+
+
+  arr_path.forEach((el, index) =>{
+    const slide = document.createElement("div");
+    slide.classList.add("slide");
+
+    if(index === 0){
+      slide.classList.add("active");
+
+
+    }
+
+
+
+    // console.log(index);
+
+
+    slide.innerHTML = `
+    
+                <img
+                class="review-photo"
+                src="${el.path}"
+                alt="Фото клиента Анна"
+              />
+    `;
+
+    sliders.appendChild(slide)
+  })
+
+
+}
+
+render_slider();
