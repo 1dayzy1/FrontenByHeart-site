@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Host: https://frontendbyheart.ru
+
+Sitemap: https://frontendbyheart.ru/sitemap.xml
