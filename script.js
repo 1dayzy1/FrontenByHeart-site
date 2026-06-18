@@ -31,6 +31,66 @@ const cert_link = document.querySelectorAll(".cert-link");
 const modal = document.querySelector(".modal");
 const shadow = document.querySelector(".shadow");
 const img = document.querySelector(".img-certificate");
+const modal_register = document.querySelector(".modal-register");
+
+const btn_reg = document.querySelector(".btn-register");
+
+const shadow2 = document.querySelector(".shadow2");
+
+const btn_send = document.querySelector(".btn-register2");
+
+const text_message = document.querySelector(".text-message")
+
+const input_login = document.getElementById("input-login");
+const input_pass = document.getElementById("input-pass");
+const input_pass2 = document.getElementById("input-pass2");
+
+
+btn_reg.addEventListener("click", () =>{
+  modal_register.classList.add("active")
+})
+
+shadow2.addEventListener("click", () =>{
+  modal_register.classList.remove("active")
+})
+
+btn_send.addEventListener("click", async() =>{
+  // console.log(input_login.value, input_pass.value, input_pass2.value)
+  try {
+    
+
+    if(input_pass.value !== input_pass2.value){
+      text_message.textContent = "Пароли не совпадают";
+      return
+
+    }
+    const req = await fetch("http://localhost:3000/api/register",{
+      method:"POST",
+      headers:{
+        "Content-type":"application/json"
+      },
+      body:JSON.stringify({
+        login:input_login.value,
+        password:input_pass2.value
+      })
+    });
+    const res = await req.json();
+  
+    console.log(res);
+
+
+    text_message.textContent = res.message
+
+    setTimeout(() =>{
+    modal_register.classList.remove("active")
+
+    }, 1200)
+    
+
+  } catch (error) {
+    console.log(error)
+  }
+})
 
 const sliders = document.querySelector(".slides");
 

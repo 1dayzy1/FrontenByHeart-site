@@ -4,42 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
     <title>Обучение созданию сайтов - FrontendByHeart.</title>
     <meta name="yandex-verification" content="b5f19ac6e1b45bc3" />
-    <meta name="description" content="Индивидуальные уроки по обучению HTML CSS JS в России. Первый сайт через 10 уроков.">
-
+    <meta
+      name="description"
+      content="Индивидуальные уроки по обучению HTML CSS JS в России. Первый сайт через 10 уроков."
+    />
   </head>
   <body>
+    <section class="modal-register">
+      <div class="shadow2"></div>
 
+      <div class="content2">
+        <h2 class=" ">Регистрация</h2>
 
-    <!-- Шапка с навигацией и кнопками на проекты -->
+        <div class="card-input">
+          <label for="input-login">Login:</label>
+          <input
+            type="text"
+            placeholder="Введите логин..."
+            required
+            id="input-login"
+          />
+        </div>
+
+        <div class="card-input">
+          <label for="input-pass">Пароль:</label>
+          <input
+            type="password"
+            placeholder="Введите пароль..."
+            required
+            id="input-pass"
+          />
+        </div>
+
+        <div class="card-input">
+          <label for="input-pass2">Повторите пароль</label>
+          <input
+            type="password"
+            placeholder="Повторите пароль..."
+            required
+            id="input-pass2"
+          />
+        </div>
+
+        <p class="text-message"></p>
+
+        <button class="btn-register2">Зарегистрироваться</button>
+      </div>
+    </section>
+
+    <section class="modal-auth">
+      <div class="shadow3"></div>
+
+      <div class="content3">
+        <h2 class="">Вход в аккаунт</h2>
+
+        <div class="card-input">
+          <label for="input-login2">Login:</label>
+          <input
+            type="text"
+            placeholder="Введите логин..."
+            required
+            id="input-login2"
+          />
+        </div>
+
+        <div class="card-input">
+          <label for="input-pass">Пароль:</label>
+          <input
+            type="password"
+            placeholder="Введите пароль..."
+            required
+            id="input-pass-auth"
+          />
+        </div>
+
+        
+
+        <p class="text-message2"></p>
+
+        <button class="btn-auth2">Войти</button>
+      </div>
+    </section>
+
     <header class="header">
       <div class="container nav">
         <div class="logo-block">
-          <img src="img/logo.svg" width="80" alt="">
-
-        <a href="#" class="logo">FrontendByHeart</a>
+          <img src="img/logo.svg" width="80" alt="Logo" />
+          <a href="#" class="logo">FrontendByHeart</a>
         </div>
-        
-        <nav class="menu">
+    
+
+      
+    
+        <nav class="menu" id="navMenu">
           <a href="#about">Обо мне</a>
           <a href="#experience">Опыт</a>
           <a href="#projects">Проекты</a>
           <a href="#reviews">Отзывы</a>
-
           <a href="#certificates">Сертификаты</a>
           <a href="#prices">Цены</a>
           <a href="#program">Программа</a>
           <a href="#contacts">Контакты</a>
+    
+
+          <div class="mobile-auth-block" id="mobileAuthBlock">
+            <button class="btn-auth">Войти</button>
+            <button class="btn-register">Регистрация</button>
+          </div>
+          
+          <a href="profile/profile.html">
 
 
+            <div class="info-profile">
+              <p  class="profile-icon" id="profileIcon" >
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </p>
+    
+              <h3 class="login"></h3>
+            </div>
+          </a>
+          
         </nav>
-      
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+
+       
       </div>
     </header>
-
     
+    
+ 
+<a href=""></a>
     <section class="hero">
       <div class="container hero-content">
         <h1>Обучаю веб-разработке с нуля до проектов</h1>
@@ -54,7 +160,8 @@
       </div>
     </section>
 
-   
+
+    
     <section id="about" class="section">
       <div class="container">
         <h2>Обо мне</h2>
@@ -68,7 +175,6 @@
       </div>
     </section>
 
- 
     <section id="experience" class="section">
       <div class="container">
         <h2>Мой опыт</h2>
@@ -88,7 +194,6 @@
         </div>
       </div>
     </section>
-
 
     <section id="projects" class="section">
       <div class="container">
@@ -116,7 +221,6 @@
             >
           </div>
 
-
           <div class="card">
             <h3>💱 Прогноз погоды</h3>
             <p>Работа с публичным API, обработка ошибок, лоадеры.</p>
@@ -127,7 +231,6 @@
               >Открыть проект</a
             >
           </div>
-
 
           <div class="card">
             <h3>📚 Магазин книг</h3>
@@ -150,14 +253,9 @@
               >Открыть проект</a
             >
           </div>
-
-
-
-
         </div>
       </div>
     </section>
-
 
     <section class="section" id="reviews">
       <div class="container">
@@ -172,21 +270,16 @@
           </div>
           <span class="rating-value">5.0</span>
         </div>
-        
 
         <div class="slider">
           <button class="slider-btn prev">‹</button>
 
-          <div class="slides">
-            
-           
-          </div>
+          <div class="slides"></div>
 
           <button class="slider-btn next">›</button>
         </div>
       </div>
     </section>
-
 
     <section id="certificates" class="section">
       <div class="container">
@@ -239,19 +332,16 @@
             </div>
           </div>
 
-
-
           <div class="cert-card">
             <div class="cert-info">
               <span class="cert-company">Stepik</span>
-              <h3>HTML, CSS, JS </h3>
+              <h3>HTML, CSS, JS</h3>
               <p>HTML, CSS, JS, LocalStorage .</p>
               <button href="#" class="cert-link" data-value="html">
                 Смотреть сертификат
               </button>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -262,7 +352,6 @@
         <img src="" alt="" class="img-certificate" />
       </div>
     </div>
-
 
     <section id="prices" class="section">
       <div class="container">
@@ -301,7 +390,6 @@
         </div>
       </div>
     </section>
-
 
     <section id="program" class="section">
       <div class="container">
@@ -353,18 +441,11 @@
             <ul>
               <li>Предоплата 100 % за выбранный пакет уроков</li>
               <li>Способы оплаты: банковская карта, перевод по реквизитам</li>
-              
             </ul>
           </div>
         </div>
       </div>
     </section>
-
-
-    
-    
-    
-
 
     <section
       id="contacts"
@@ -413,7 +494,6 @@
               <p><strong>Бираковский Дмитрий Андреевич</strong></p>
               <p>ИНН: 502993788007</p>
 
-
               <p>Расчётный счёт: 40817810500057938257</p>
               <p>Банк: АО «ТБанк</p>
               <p>БИК: 044525974</p>
@@ -421,27 +501,35 @@
             </div>
           </div>
         </footer>
-        
       </div>
     </section>
-
 
     <div class="refund-policy">
       <h3>Политика возврата</h3>
       <ul>
         <li>Отмена урока менее чем за 24 часа — урок считается проведённым.</li>
         <li>Перенос урока возможен не более 2 раз за пакет.</li>
-        <li>Возврат средств:
+        <li>
+          Возврат средств:
           <ul>
             <li>До начала курса — 100 % суммы.</li>
-            <li>После начала курса — пропорционально неиспользованным урокам за вычетом 15 % административного сбора.</li>
+            <li>
+              После начала курса — пропорционально неиспользованным урокам за
+              вычетом 15 % административного сбора.
+            </li>
           </ul>
         </li>
-        <li>При форс‑мажорах (болезнь, ЧП) — индивидуальный график отработки пропущенных занятий.</li>
+        <li>
+          При форс‑мажорах (болезнь, ЧП) — индивидуальный график отработки
+          пропущенных занятий.
+        </li>
       </ul>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
     <script src="slider.js"></script>
+    <script src="auth.js" type="module"></script>
+    <script src="burger_menu.js" type="module"></script>
+
   </body>
 </html>

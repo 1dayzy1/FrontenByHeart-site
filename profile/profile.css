@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.block-nav{
+    position: fixed;
+    background-color: aqua;
+    padding: 30px 50px;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout{
+    border: none;
+    background-color: aqua;
+    cursor: pointer;
+}
